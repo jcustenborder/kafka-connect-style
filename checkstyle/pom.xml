@@ -24,7 +24,7 @@
     <parent>
         <groupId>com.github.jcustenborder.kafka.connect</groupId>
         <artifactId>kafka-connect-style-parent</artifactId>
-        <version>1.0.0.0-SNAPSHOT</version>
+        <version>1.1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>kafka-connect-style-checkstyle</artifactId>
