@@ -1,4 +1,4 @@
-<!--
+ <!--
 
     Copyright © 2017 Jeremy Custenborder (jcustenborder@gmail.com)
 
@@ -24,16 +24,10 @@
     <includeBaseDirectory>false</includeBaseDirectory>
     <fileSets>
         <fileSet>
-            <directory>${project.build.directory}</directory>
-            <outputDirectory>usr/share/doc/${project.name}/</outputDirectory>
-            <includes>
-                <include>CHANGELOG*</include>
-            </includes>
-        </fileSet>
-        <fileSet>
             <directory>${project.basedir}</directory>
             <outputDirectory>usr/share/doc/${project.name}/</outputDirectory>
             <includes>
+                <include>CHANGELOG*</include>
                 <include>README*</include>
                 <include>LICENSE*</include>
                 <include>NOTICE*</include>
@@ -50,7 +44,7 @@
     </fileSets>
     <dependencySets>
         <dependencySet>
-            <outputDirectory>usr/share/java/${project.name}</outputDirectory>
+            <outputDirectory>usr/share/kafka-connect/${project.name}</outputDirectory>
             <useProjectArtifact>true</useProjectArtifact>
             <useTransitiveFiltering>true</useTransitiveFiltering>
         </dependencySet>
