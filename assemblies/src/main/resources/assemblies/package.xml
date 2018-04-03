@@ -25,7 +25,7 @@
     <fileSets>
         <fileSet>
             <directory>${project.basedir}</directory>
-            <outputDirectory>usr/share/doc/${project.name}/</outputDirectory>
+            <outputDirectory>usr/share/doc/${project.artifactId}/</outputDirectory>
             <includes>
                 <include>CHANGELOG*</include>
                 <include>README*</include>
@@ -36,7 +36,7 @@
         </fileSet>
         <fileSet>
             <directory>${project.basedir}/config</directory>
-            <outputDirectory>etc/${project.name}</outputDirectory>
+            <outputDirectory>etc/${project.artifactId}</outputDirectory>
             <includes>
                 <include>*</include>
             </includes>
@@ -44,7 +44,7 @@
     </fileSets>
     <dependencySets>
         <dependencySet>
-            <outputDirectory>usr/share/kafka-connect/${project.name}</outputDirectory>
+            <outputDirectory>usr/share/kafka-connect/${project.artifactId}</outputDirectory>
             <useProjectArtifact>true</useProjectArtifact>
             <useTransitiveFiltering>true</useTransitiveFiltering>
         </dependencySet>
